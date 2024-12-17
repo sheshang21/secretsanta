@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chit Picking</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to Chit Picker</h1>
+
+    <!-- File upload form -->
+    <input type="file" id="fileUpload" accept=".xlsx" />
+    <button id="uploadBtn">Upload File</button>
+
+    <!-- Employee ID input -->
+    <div>
+      <input type="number" id="employeeId" placeholder="Enter Employee ID" />
+      <button id="openChitButton">Open Chit</button>
+    </div>
+
+    <!-- Chit opening animation -->
+    <div id="chitBox" class="chit-box">
+      <div id="chitText">Click to open a chit!</div>
+    </div>
+
+    <div id="chitResult"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
